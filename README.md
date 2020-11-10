@@ -8,5 +8,4 @@ Fundamentos de arquitectura de software
 * Julian Alejandro Rojas
 * Juan David Ruiz
 * Jean Paul Yepes
-* Luis Santiago Maya
 * Daniel Andrés Toro

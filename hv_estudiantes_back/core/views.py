@@ -2,7 +2,9 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 
-from core.forms import SignUpForm, SignUpOfferForm
+from django.http import HttpResponse
+
+from core.forms import SignUpForm, SignUpOfferForm, AddNewOfferForm
 
 
 def signup(request):
@@ -28,3 +30,7 @@ def signupOffer(request):
     else:
         form = SignUpOfferForm()
     return render(request, 'registration/signupOffer.html', {'form': form})
+
+def addNewOffer(request):
+    form = AddNewOfferForm()
+    return render(request,'offer/addNewOffer.html', {'form': form})
